@@ -8,5 +8,5 @@ A go webserver using [iris](https://github.com/kataras/iris).
     ```bash
     git clone https://github.com/iSuperMostafa/go-rest-api-example && cd "$_"
     ```
-2. Install Django: `go get -u github.com/kataras/iris`.
+2. Install iris: `go get -u github.com/kataras/iris`.
 3. run development server: `go run main.go`.
