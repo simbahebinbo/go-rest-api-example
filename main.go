@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/kataras/iris"
-	"github.com/kataras/iris/middleware/logger"
-	"github.com/kataras/iris/middleware/recover"
+	"github.com/kataras/iris/v12"
+	"github.com/kataras/iris/v12/middleware/logger"
+	"github.com/kataras/iris/v12/middleware/recover"
 
-	"github.com/isupermostafa/go-rest-api-example/api"
+	"go-rest-api-example/api"
 )
 
 func main() {
@@ -18,6 +18,6 @@ func main() {
 	app.Use(logger.New())
 	// routes
 	api.Routes(app)
-    // listen and serve on http://0.0.0.0:8080.
+	// listen and serve on http://0.0.0.0:8080.
 	app.Run(iris.Addr(":8080"), iris.WithoutServerError(iris.ErrServerClosed))
 }
